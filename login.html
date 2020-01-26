@@ -1,0 +1,65 @@
+
+<html>
+
+<script type="text/javascript">
+
+
+function validateForm() {
+    var a = document.forms["login"]["id"].value;
+	var b = document.forms["login"]["password"].value;
+    if (a == "" || b== "" ) {
+        alert("All the field must be filled out.");
+        return false;
+    }
+	
+	
+
+} 
+
+
+</script>
+
+
+
+
+
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 
+	 <link rel="stylesheet" type="text/css" href="animate.css">
+	 <link rel="stylesheet" type="text/css" href="stylehomepage.css" />
+</head>
+<body>
+
+<div id="container"> 
+        
+   
+	<div class="header">
+		<h1 class ="fadeInUpBig">Login</h1>
+	</div>
+	
+	<form name = "login" onsubmit="return validateForm()" method = "post" action ="intermidiate.php">
+
+
+		<div class="input-group">
+			<label>ID</label>
+			<input type="text" name="id">
+		</div>
+
+		
+		<div class="input-group">
+			<label>Password</label>
+			<input type="password" name="pass">
+		</div>
+
+		<div class="input-group">
+			<button type="submit" class="btn" name="reg_user">Login</button>
+		</div>
+		<p>
+			Not a member? Contact With Supervisor.
+		</p>
+	</form>
+	</div>
+</body>
+</html>
